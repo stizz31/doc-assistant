@@ -7,7 +7,7 @@ class TextClassifier(nn.Module):
         super().__init__()
 
         self.net == nn.Sequential(
-            nn.Linear (in_features, 128)
+            nn.Linear (in_features, 128),
             nn.ReLU(),
             nn.Linear(128, num_classes)
         )
