@@ -1,7 +1,12 @@
 import pandas as pd 
 import torch
+
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import LabelEncoder
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+DATA_PATH = BASE_DIR / ".." / "data" / "processed" / "clean.csv"
 
 def get_prepared_data():
     df = pd.read_csv("..\\data\\processed\\data_netflix")
