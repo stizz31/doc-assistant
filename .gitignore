@@ -3,8 +3,8 @@ __pycache__/
 *.pyc 
 data/raw
 data/processed/clean/csv
+data/vector_db
 models/
-.ipynb_checkpoints/
-
+ollama/
 .env
 .ipynb_checkpoints/
